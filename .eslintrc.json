@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    // "no-console": "warn",
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "off",
+    "no-unreachable": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "linebreak-style": ["error", "windows"],
+    "lines-between-class-members": ["warn", "always", {"exceptAfterSingleLine": true}],
+    "no-trailing-spaces": ["error"],
+    "object-curly-spacing": ["warn", "always", {"arraysInObjects": false}],
+    "array-bracket-spacing": ["warn", "always"],
+    //"comma-dangle": ["error", "never"],
+    "quotes": ["error", "single"],
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "semi": ["error", "always"],
+    "no-unused-vars": "off",
+    "max-len": ["warn", 150],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-interface": "off"
+  },
+  "settings": {}
+}
